@@ -9,6 +9,69 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
+        <div class="container">
         
+        <h1>Image - rounded corners</h1>
+        <p> The .img-rounded class ads rounded corners to the image (except IE8):</p>
+        <img class="img-rounded" src="./assets/img/monterossoAlMare.jpg" alt="monterossoAlMare">
+        
+        <h1>Image - shaped with a circle</h1>
+        <p> The .img-circle class shapes the image to a circle (not available in IE8):</p>
+        <img class="img-circle" src="./assets/img/monterossoAlMare.jpg" alt="monterossoAlMare">
+
+        <h1>Image - thumbnail</h1>
+        <p> The .img-thumbnail class shapes the image to a thumbnail </p>
+        <img class="img-thumbnail" src="./assets/img/monterossoAlMare.jpg" alt="monterossoAlMare">
+
+        <h1>Image - responsive</h1>
+        <p> The .image-responsive class makes the image scale nicely to the parent element (resize
+            the browser window to see the effect)</p>
+        <img class="img-responsive" src="./assets/img/chania.jpg" alt="chania">
+
+        <h1> Image gallery with Bootstrap's grid system </h1>
+        <p> You can use Bootstrap's grid system in conjuction with .thumbnail class to create an image gallery</p>
+        <p> The caption class adds proper padding and a dark gray color to text inside thumbnails</p>
+        <p> Attribute target="_blank" make image to open in a new tab</p>
+        <p> Click on the images to enlarge them </p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="tumbnail">
+                    <a href="./assets/img/northLights.jpg" target="_blank">
+                        <img src="./assets/img/northLights.jpg" alt="Lights" style="width:100%">
+                        <div class="caption">
+                            <p>Lorem ipsum...</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="tumbnail">
+                    <a href="./assets/img/fortinosangorgio.jpg" target="_blank">
+                        <img src="./assets/img/fortinosangorgio.jpg" alt="Fort" style="width:100%">
+                        <div class="caption">
+                            <p>Lorem ipsum...</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="tumbnail">
+                    <a href="./assets/img/trollTunga.jpg">
+                        <img src="./assets/img/trollTunga.jpg" alt="Troll" style="width:100%">
+                        <div class="caption">
+                            <p>Lorem ipsum...</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <h1>Responsive Embed</h1>
+        <p>Create a responsive video and scale it nicely to the parent element with an 16by9 aspect ratio</p>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=Gi11C2rqggk"></iframe>
+        </div>
+
+        </div>
     </body>
 </html>
