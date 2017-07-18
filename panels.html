@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title> Bootstrap Getting started </title>
+        <meta chatset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Bootstrap panels</h1>
+    
+            <h2>Panels</h2>
+            <p>A panel in Bootstrap is a bordered box with some padding around its content</p>
+            <p>Panels are created with the <code>.panel</code> class, and content inside the panel has a <code>.panel-body</code> class:</p>
+            <div class="panel panel-default">
+                <div class="panel-body">A basic panel</div>
+            </div>
+
+            <h2>Panel heading</h2>
+            <p>The <code>.panel-heading</code> class adds a heading to the panel:</p>
+            <div class="panel panel-default">
+                <div class="panel-heading">Panel heading</div>
+                <div class="panel-body">Panel body</div>
+            </div>
+
+            <h2>Panel footer</h2>
+            <p>The <code>.panel-footer</code> class adds a footer to the panel:</p>
+            <div class="panel panel-default">
+                <div class="panel-body">Panel body</div>
+                <div class="panel-footer">Panel footer</div>
+            </div>
+
+            <h2>Panel group</h2>
+            <p>To group many panels together, wrap <code>&lt;div&gt;</code> with class <code>.panel-group</code> around them</p>
+            <p>The <code>.panel-group</code> class clears the bottom margin</p>
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel-heading">First panel heading</div>
+                    <div class="panel-body">First panel body</div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">Second panel heading</div>
+                    <div class="panel-body">Second panel body</div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">Third panel heading</div>
+                    <div class="panel-body">Third panel body</div>
+                </div>
+            </div>
+
+            <h2>Panels with contextual classes</h2>
+            <p>To color the panel use contextual classes:</p>
+            <ul>
+                <li><code>.panel-primary</code></li>
+                <li><code>.panel-default</code></li>
+                <li><code>.panel-success</code></li>
+                <li><code>.panel-info</code></li>
+                <li><code>.panel-warning</code></li>
+                <li><code>.panel-danger</code></li>
+            </ul>
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel-heading">First heading</div>
+                    <div class="panel-body">First body</div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Second heading</div>
+                    <div class="panel-body">Second body</div>
+                </div>
+                <div class="panel panel-success">
+                    <div class="panel-heading">Third heading</div>
+                    <div class="panel-body">Third body</div>
+                </div>
+                <div class="panel panel-info">
+                    <div class="panel-heading">Fourth heading</div>
+                    <div class="panel-body">Fourth body</div>
+                </div>
+                <div class="panel panel-warning">
+                    <div class="panel-heading">Fifth heading</div>
+                    <div class="panel-body">Fifth body</div>
+                </div>
+                <div class="panel panel-danger">
+                    <div class="panel-heading">Sixth heading</div>
+                    <div class="panel-body">Sixth body</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
