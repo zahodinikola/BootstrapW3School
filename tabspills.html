@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title> Bootstrap Getting started </title>
+        <meta chatset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+        <h1>Bootstrap Tabs and Pills</h1>
+
+        <h2>Menus</h2>
+        <p>In HTML a menu is often defined in an unordered list (and styled afterwards), like this</p>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+        </ul>
+        <p>If you want to create a horizontal menu of the list above, add the <code>.list-inline</code> class to <code>&lt;ul&gt;</code>:</p>
+        <ul class="list-inline">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+        </ul>
+        <p>Or you can display the menu above with Bootstraps Tab's and Pills (see below)</p>
+
+        <h2>Tabs</h2>
+        <p>Tabs are created with <code>.nav nav-tabs</code> class. Also mark the current page with <code>.active</code> class</p>
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+        </ul>
+
+        <h2>Tabs with dropdown menu</h2>
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu 1
+                    <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Submenu 1-1</a></li>
+                    <li><a href="#">Submenu 1-2</a></li>
+                    <li><a href="#">Submenu 1-3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+        </ul>
+
+        <h2>Pills</h2>
+        <p>Pills are created with <code>.nav nav-pills</code> class</p>
+        <ul class="nav nav-pills">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+        </ul>
+
+        <h2>Vertical pills</h2>
+        <ul class="nav nav-pills nav-stacked">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+        </ul>
+
+        <h2>Vertical pills in a row</h2>
+        <div class="col-md-3"></div>
+        <div class="col-md-3"></div>
+        <div class="col-md-3"></div>
+        <div class="col-md-3">
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+            </ul>
+        </div>
+
+        <h2>Pills with dropdown menu</h2>
+        <ul class="nav nav-pills nav-stacked">
+            <li class="active"><a href="#">Menu 1</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Submenu 1</a></li>
+                    <li><a href="#">Submenu 2</a></li>
+                    <li><a href="#">Submenu 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+        </ul>
+        </div>
+    </body>
+</html>
