@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title> Bootstrap Getting started </title>
+        <meta chatset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+		<div class="container">
+			<h1>Bootstrap navigation bar</h1>
+			<br />
+			<h2>Navigation bars</h2>
+			<p>A navigation bar is a navigation header that is placed on the top of the page</p>
+			<p>With Bootstrap a navigation bar can extend or collapse, depending on screen size.</p>
+			<p>A standart navigation bar is created with <code>&lt;nav class="navbar navbar-default"&gt;</code></p>
+			<p>The following example shows how to add a navigation bar to the top of the page</p>
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a href="#" class="navbar-brand">WebSiteNew</a>
+					</div>
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Page 1</a></li>
+						<li><a href="#">Page 2</a></li>
+						<li><a href="#">Page 3</a></li>
+						<li><a href="#">Page 4</a></li>
+					</ul>
+				</div>
+			</nav>
+			
+			<h2>Inverted navigation bar</h2>
+			<p>Just change the <code>.navbar-default</code> class to <code>.navbar-inverse</code><p>
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#">NewSite</a>
+					</div>
+					<ul class="nav navbar-nav">
+						<li><a href="#">Page 1</a></li>
+						<li><a href="#">Page 2</a></li>
+						<li><a href="#">Page 3</a></li>
+						<li><a href="#">Page 4</a></li>
+					</ul>
+				</div>
+			</nav>
+			
+			<h2>Navigation bar with dropdown</h2>
+			<p>Navigation bars can also have dropdown menu</p>
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#">NewSiteName</a>
+					</div>
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu 1<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Submenu 1</a></li>
+								<li><a href="#">Submenu 2</a></li>
+								<li><a href="#">Submenu 3</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Menu 2</a></li>
+					</ul>
+				</div>
+			</nav>
+			
+			<h2>Right aligned navigation bar</h2>
+			<p>The <code>.navbar-right</code> class is used to right align navigation bar buttons</p>
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#">SameSiteName</a>
+					</div>
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Menu 1</a></li>
+						<li><a href="#">Menu 2</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+					</ul>
+				</div>
+			</nav>
+			
+			<h2>Navbar buttons</h2>
+			<p>To add button inside the navbar use <code>.navbar-btn</code> class inside the Bootstrap button</p>
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a href="#" class="navbar-brand">SiteName</a>
+					</div>
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Link 1</a></li>
+						<li><a href="#">Link 2</a></li>
+					</ul>
+					<button type="button" class="btn btn-danger navbar-btn">Eat me:&gt;</button>
+					
+						
+				</div>
+			</nav>
+		</div>
+	</body>
+</html>
