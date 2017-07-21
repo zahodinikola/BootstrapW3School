@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title> Bootstrap Getting started </title>
+        <meta chatset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Bootstrap forms</h1>
+            <br>
+            <h2>Bootstrap's default settings</h2>
+            <p>Form controls automatically recieve some global styling from Bootstrap</p>
+            <p>All textual <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code> and <code>&lt;select&gt;</code> elements with class <code>.form-control</code> have a width of 100%</p>
+            <br>
+            <h2>Bootstrap form layouts</h2>
+            <p>Bootstrap provides three types of form layouts</p>
+            <ul>
+                <li>Vertical form (this is default)</li>
+                <li>Horizontal form</li>
+                <li>Inlilne form</li>
+            </ul>
+            <p>Standart rules for all three form layouts</p>
+            <ul>
+                <li>Wrap labels and form controls in <code>&lt;div class="form-group"&gt;</code> (needed for optimum spasing)</li>
+                <li>Add class <code>.form-control</code> to all textual <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code> and <code>&lt;select&gt;</code> elements</p>
+            </ul>
+            <br>
+            <h2>Bootstrap vertical forms (default)</h2>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password">
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox">Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <br>
+            <h2>Bootstrap inline forms</h2>
+            <p>Add class <code>.form-inline</code> to the <code>&lt;form&gt;</code> element</p>
+            <p><strong>Note: This only applies to forms withing viewports that are at least 768px wide</strong></p>
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="email_1">Email</label>
+                    <input type="text" class="form-control" id="email_1" placeholder="enter email">
+                </div>
+                <div class="form-group">
+                    <label for="password_1">Password</label>
+                    <input type="text" class="form-control" id="password_1" placeholder="enter password">
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox">Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <p>If there were no labels for each input, screen-readers would have problems with form. It's possible to hide labels for all devices, except screen readers by adding <code>.sr-only</code> class</p>
+            <form class="form-inline">
+                <div class="form-group">
+                    <label class="sr-only" for="email_1">Email</label>
+                    <input type="text" class="form-control" id="email_1" placeholder="enter email">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="password_1">Password</label>
+                    <input type="text" class="form-control" id="password_1" placeholder="enter password">
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox">Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <br>
+            <h2>Bootstrap horizontal form</h2>
+            <p>A horizontal form means that the labels are aligned next to the input field (horizontal) on large and medium screens</p>
+            <p>On small screens (768px and below) it will transform to a vertical form (labels are placed on top of each input field.</p>
+            <p>Additional rules for a horizontal form</p>
+            <ul>
+                <li><p>Add class <code>.form-horizontal</code> to the <code>&lt;form&gt;</code> element</p></li>
+                <li><p>Add class <code>.control-label</code> to all <code>&lt;label&gt;</code> elements</p></li>
+            </ul>
+            <p>Use Bootstrap's predefined greed classes to align labels and groups of form controls in a horizontal layoup</p>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="email_2" class="controll-label col-sm-2">Email:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="email_2" placeholder="enter email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password_2" class="control-label col-sm-2">Password:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="password_2" placeholder="enter password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <div class="checkbox">
+                            <label><input type="Checkbox">Remember me</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
