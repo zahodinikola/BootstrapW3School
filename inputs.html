@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title> Bootstrap Getting started </title>
+        <meta chatset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+	<body>
+		<div class="container">
+			<h1>Bootstrap form inputs</h1>
+			<br>
+			<h2>Supported form controls</h2>
+			<p>Bootstrap supports the following form controls</p>
+			<ul>
+				<li><p>input</p></li>
+				<li><p>textarea</p></li>
+				<li><p>checkbox</p></li>
+				<li><p>radio</p></li>
+				<li><p>select</p></li>
+			</ul>
+			<br>
+			<h2>Bootstrap inputs</h2>
+			<p>Inputs will not be fully styled if their type is not properly declared</p>
+			<form class="form-horizontal">
+				<div class="form-group">
+					<label for="user">User</label>
+					<input type="text" class="form-control" id="user">
+				</div>
+				<div class="form-group">
+					<label for="password">Password</label>
+					<input type="text" class="form-control" id="password">
+				</div>
+			</form>
+			<br>
+			<h2>Bootstrap text area</h2>
+			<p></p>
+			<form>
+				<div class="form-group">
+					<label for="textarea">Textarea</label>
+					<textarea class="form-control" rows="5" id="textarea"></textarea>
+				</div>
+			</form>
+			<br>
+			<h2>Bootstrap checkboxes</h2>
+			<form>
+				<div class="checkbox">
+					<label><input type="checkbox" value="">Option 1</label>
+				</div>
+				<div class="checkbox">
+					<label><input type="checkbox" value="">Option 2</label>
+				</div>
+				<div class="checkbox">
+					<label><input type="checkbox" value="" disabled>Option 3</label>
+				</div>
+			</form>
+			<p>Use the <code>.checkbox-inline</code> class, if you want the checkboxes to appear on the same line</p>
+			<form>
+				<label class="checkbox-inline"><input type="checkbox" value="">Option 1</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">Option 2</label>
+				<label class="checkbox-inline"><input type="checkbox" value="">Option 3</label>
+			</form>
+			<br>
+			<h2>Bootstrap radio buttons</h2>
+			<form>
+				<div class="radio">
+					<label><input type="radio" name="optionRadio">Option 1</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="optionRadio">Option 2</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="optionRadio">Option 3</label>
+				</div>
+			</form>
+			<p>Use the <code>.radio-inline</code> class, if you want the radio buttons to appear on the same line</p>
+			<form>
+				<label class="radio-inline"><input type="radio" name="newRadio">Option 1</label>
+				<label class="radio-inline"><input type="radio" name="newRadio">Option 2</label>
+				<label class="radio-inline"><input type="radio" name="newRadio">Option 3</label>
+			</form>
+			<br>
+			<h2>Bootstrap select list</h2>
+			<form>
+				<div class="form-group">
+					<label for="select1">Select list:</label>
+					<select class="form-control" id="select1">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+					<br>
+					<label for="select2">Multiple select list:</label>
+					<select multiple class="form-control" id="select2">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+				</div>
+			</form>
+			<br>
+			<h2>Bootstrap form inputs</h2>
+			<h3>Static control</h3>
+			<p>If you need to insert plain text next to a form label within a horizontal form, use <code>.form-control-static</code> class on a <code>&lt;p&gt;</code> element</p>
+			<form class="form-horizontal">
+				<div class="form-group">
+					<label class="control-label col-sm-2" for="email">Email</label>
+					<div class="col-sm-10">
+						<p class="form-control-static">somewho@mail.com</p>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-2" for="password">Password</label>
+					<div class="col-sm-10">
+						<input type="password" class="form-control" id="password" placeholder="enter password" name="password">
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10">
+						<button type="submit" class="btn btn-default">Submit</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
+	
