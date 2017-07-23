@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title> Bootstrap Getting started </title>
+        <meta chatset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+	<body>
+        <div class="container">
+            <h2>Bootstrap media objects</h2>
+            <h3>Media objects</h3>
+            <h3>Basic media object</h3>
+            <p>Use the <code>.media-left</code> class to left align a media object.</p>
+            <p>Text, that should appear next to the image, is placed inside a container with class <code>.media-body</code></p>
+            <div class="media">
+                <div class="media-left">
+                    <img src="./assets/img/img_avatar1.png" class="media-object" style="width: 60px">
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Left aligned</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                </div>
+            </div>
+            <p>Use media right to right align media object</p>
+            <div class="media">
+                <div class="media-body">
+                    <h4 class="media-heading">Right aligned</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.....</p>
+                </div>
+                <div class="media-right">
+                    <img src="./assets/img/img_avatar1.png" class="media-object" style="width: 60px">
+                </div>
+            </div>
+            <h3>Top, middle or bottom alignment</h3>
+            <p>Media object can be top, middle or bottom aligned with the classes:</p>
+            <ul>
+                <li><code>.media-top</code></li>
+                <li><code>.media-middle</code></li>
+                <li><code>.media-bottom</code></li>
+            </ul>
+            <div class="media">
+                <div class="media-left media-top">
+                    <img src="./assets/img/img_avatar1.png" class="media-object" style="width: 60px">
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Media top</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="media">
+                <div class="media-left media-middle">
+                    <img src="./assets/img/img_avatar1.png" class="media-object" style="width: 60px">
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Media middle</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="media">
+                <div class="media-left media-bottom">
+                    <img src="./assets/img/img_avatar1.png" class="media-object" style="width: 60px">
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Media bottom</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <h2>Nesting media objects</h2>
+            <div class="media">
+                <div class="media-left">
+                    <img src="./assets/img/img_avatar1.png" class="media-object" style="width: 60px">
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Media bottom</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="media">
+                        <div class="media-left">
+                            <img src="./assets/img/img_avatar1.png" class="media-object" style="width: 60px">
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Media bottom</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="./assets/img/img_avatar1.png" class="media-object" style="width: 60px">
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Media bottom</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2>Another nesting media objects</h2>
+            <div class="media">
+                <div class="media-left">
+                    <img src="./assets/img/img_avatar1.png" class="media-object" style="width: 60px">
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Media bottom</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="media">
+                        <div class="media-left">
+                            <img src="./assets/img/img_avatar1.png" class="media-object" style="width: 60px">
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Media bottom</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="./assets/img/img_avatar1.png" class="media-object" style="width: 60px">
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Media bottom</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="./assets/img/img_avatar1.png" class="media-object" style="width: 60px">
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Media bottom</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left">
+                        <img src="./assets/img/img_avatar1.png" class="media-object" style="width: 60px">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Media bottom</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

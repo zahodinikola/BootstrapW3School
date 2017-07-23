@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title> Bootstrap Getting started </title>
+        <meta chatset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+	<body>
+        <div class="container">
+            <h2>Bootstrap input sizing</h2>
+            <p>Set the hights of input elements using classes like <code>.input-lg</code> and <code>.input-sm</code>.</p>
+            <p>Set the width of elements using grid column classes like <code>.col-lg-*</code> and <code>.col-sm-*</code>.</p>
+            <br>
+            <h3>Hight sizing</h3>
+            <form>
+                <div class="form-group">
+                    <label for="input1">Default input</label>
+                    <input type="text" class="form-control" id="input1">
+                </div>
+                <div class="form-group">
+                    <label for="input2">Input large</label>
+                    <input type="text" class="form-control input-lg" id="input2">
+                </div>
+                <div class="form-group">
+                    <label for="input3">Input small</label>
+                    <input type="text" class="form-control input-sm" id="input3">
+                </div>
+                <div class="form-group">
+                    <label for="select1">Default select list</label>
+                    <select class="form-control" id="select1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="select2">Large select list</label>
+                    <select class="form-control input-lg" id="select2">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="select3">Small select list</label>
+                    <select class="form-control input-sm" id="select3">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+            </form>
+            <p>To size labels and form controls within a <strong>Horizontal form</strong> add <code>.form-group-*</code> to the <code>&lt;div class="form-group"&gt;</code> element:</p>
+            <form class="form-horizontal">
+                <div class="form-group form-group-lg">
+                    <label for="lg" class="col-sm-2 control-label">Form group large</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" id="lg">
+                    </div>
+                </div>
+                <div class="form-group form-group-sm">
+                    <label for="sm" class="col-sm-2 control-label">Form group small</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" id="sm">
+                    </div>
+                </div>
+            </form>
+            <p>To quickly size all inputs and other elements inside an <code>.input-group</code> with the <code>.input-group-lg</code> or <code>.input-group-sm</code> classes:</p>
+            <form>
+                <div class="input-group input-group-lg">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </div>
+            </form>
+            <br>
+            <form>
+                <div class="input-group input-group-sm">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </div>
+            </form>
+            <h2>Column sizing</h2>
+            <div class="form-group row">
+                <div class="col-xs-2">
+                    <label for="id1" class="control-label">Xs-2</label>
+                    <input type="text" class="form-control" id="id1">
+                </div>
+                <div class="col-xs-3">
+                    <label for="id2" class="control-label">Xs-3</label>
+                    <input type="text" class="form-control" id="id2">
+                </div>
+                <div class="col-xs-4">
+                    <label for="id3" class="control-label">Xs-4</label>
+                    <input type="text" class="form-control" id="id3">
+                </div>
+            </div>
+            <h3>Help text</h3>
+            <p>Use the <code>.help-block</code> class to add a block level help text in forms:</p> 
+            <form>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input class="form-control" type="text" id="password">
+                    <span class="help-block">Help block .......</span>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
